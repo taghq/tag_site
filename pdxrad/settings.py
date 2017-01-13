@@ -152,7 +152,8 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'cmsplugin_css_background',
-    'pdxrad'
+    'signup_form',
+    'pdxrad',
 )
 
 LANGUAGES = (
@@ -180,7 +181,6 @@ CMS_LANGUAGES = {
 
 CMS_TEMPLATES = (
     ## Customize this
-    ('page.html', 'Page'),
     ('feature.html', 'Page with Feature'),
     ('front-page/base.html', 'Landing Page')
 )
@@ -211,3 +211,12 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+
+####Email Settings
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'neurobomber@gmail.com'
+EMAIL_HOST_PASSWORD = 'SantaCruz2010'
+DEFAULT_FROM_EMAIL = 'neurobomber@gmail.com'
