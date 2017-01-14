@@ -1,11 +1,10 @@
 from .base import *
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.radcity.org']
 
-SECURE_SSL_REDIRECT = False
-
+SECURE_SSL_REDIRECT = True
 
 
 DATABASES = {
@@ -29,7 +28,7 @@ EMAIL_PORT = 587
 DEFAULT_FROM_EMAIL = 'admin@example.com'
 
 #Media
-MEDIA_ROOT = '/home/user/media/'
+MEDIA_ROOT = '/home/pdxrad/media/'
 MEDIA_URL = '/media/'
 
 
