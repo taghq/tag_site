@@ -151,7 +151,6 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'cmsplugin_css_background',
     'signup_form',
     'pdxrad',
 )
