@@ -1,4 +1,6 @@
+
 env/
 migrations/
 __pycache__/
 *.pyc
+pdxrad/settings/local.py 
