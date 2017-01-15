@@ -129,7 +129,11 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'signup_form',
+)
+
+INSTALLED_APPS += (
+    'bootstrap3',
+    'djangocms_forms',
     'pdxrad',
 )
 
@@ -156,10 +160,19 @@ CMS_LANGUAGES = {
     ],
 }
 
+##
+# CMS Settings
+##
+
 CMS_TEMPLATES = (
     ## Customize this
-    ('feature.html', 'Page with Feature'),
+    ('page.html', 'Basic Page'),
     ('front-page/base.html', 'Landing Page')
+)
+
+DJANGOCMS_FORMS_TEMPLATES = (
+    ('djangocms_forms/form_template/default.html', ('Default')),
+    ('form/bootstrap-default.html', ('Bootstrap Default')),
 )
 
 CMS_PERMISSION = True
