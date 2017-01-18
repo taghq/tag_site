@@ -2,6 +2,7 @@
 env/
 migrations/
 __pycache__/
+media/
 *.pyc
 pdxrad/settings/local.py 
 environment.py
