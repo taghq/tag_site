@@ -1,8 +1,8 @@
-{% load cms_tags menu_tags %}
+{% load static cms_tags menu_tags %}
 <!-- Navigation -->
     <div class="head">
       <div class="head-brand">
-        <img class="head-brand-logo" src="/media/images/logo.svg" />
+        <img class="head-brand-logo" src="{% static 'images/logo.svg' %}" />
         <h1 class="head-brand-text">
           Reimagining<br/>
           Active<br/>
@@ -10,12 +10,7 @@
         </h1>
       </div>
       <div class="head-navbar">
-        <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Sign Up</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Further Reading</a></li>
-        </ul>
+        {% show_menu 0 1 100 100 "menu/rad-menu.html" %}
       </div>
       <br class="clear" />
     </div>

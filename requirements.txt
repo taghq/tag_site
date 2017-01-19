@@ -21,3 +21,5 @@ django-sekizai>=0.9
 django-select2<5.0six
 djangocms-forms
 django-bootstrap3
+
+mysqlclient

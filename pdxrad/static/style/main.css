@@ -17,7 +17,7 @@ html, body {
 }
 
 body {
-  background: url('/media/images/background.png') top right no-repeat;
+  background: url('/static/images/background.png') top right no-repeat;
   background-size: cover;
   font-family: 'Hiragino Sans GB';
 }
