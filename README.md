@@ -1,15 +1,24 @@
-=====
-PDX RAD Landing Page
-=====
+====
+RAD City Website
+====
 
-This is a CMS-supported landing page for PDX RAD
+## Prerequisites
+- Python 3
 
-Quick start
------------
 
-1. Add "landingpage" to your INSTALLED_APPS setting like this::
+##Setup
 
-    INSTALLED_APPS = [
-        ...
-        'landingpage',
-    ]
+1. Create a virtual environment with `pyvenv env` (unless you're installing it outside the folder, please name the environment folder "env")
+2. `pip install -r requirements`
+3. Create a new settings file in `pdxrad/settings/`, you can copy the `template.py` file* 
+4. In your project's root, type the following:
+```
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+```
+
+After that you should be able to view the site in the browser at `http://localhost:8000`
+
+*If you're running locally, name it `local.py`, otherwise you'll need to create an `environment.py` file in root and change the `DJANGO_SETTINGS_MODULE` variable
