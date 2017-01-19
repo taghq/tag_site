@@ -1,8 +1,9 @@
-
+static/
 env/
 migrations/
 __pycache__/
 media/
+*.db
 *.pyc
 pdxrad/settings/local.py 
 environment.py
