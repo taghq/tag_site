@@ -14,7 +14,25 @@
         <div class="form-errors" style="display:none;"></div>
             <div class="signup-form-section col-sm-4">
             {% for field in form.visible_fields %}
-                {% bootstrap_field field show_label=False %}
+                {% if field|is_checkboxselectmultiple %}
+                <h4>{{ field.label }}:</h4>
+                <div class="row">
+                    <div class="col-xs-6">
+                    {% for checkbox in field %}
+                    <p>
+                        {{ checkbox.tag }}
+                        <label for="{{ checkbox.id_for_label }}">{{ checkbox.choice_label }}</label>
+                    </p>
+                    {% if forloop.counter|divisibleby:3 %}
+                    </div>
+                    <div class="col-xs-6">
+                    {% endif %}
+                    {% endfor %}
+                    </div>
+                </div>
+                {% else %}
+                    {% bootstrap_field field show_label=False %}
+                {% endif %}
                 {% if forloop.counter|divisibleby:2 %}
                 </div>
                 <div class="signup-form-section col-sm-4">
