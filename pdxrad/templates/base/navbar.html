@@ -1,24 +1,16 @@
-{% load cms_tags menu_tags %}
+{% load static cms_tags menu_tags %}
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-    <div class="container topnav">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand topnav" href="/">Portland RAD</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                {% show_menu 0 100 0 100 %}
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+    <div class="head">
+      <div class="head-brand">
+        <img class="head-brand-logo" src="{% static 'images/logo.svg' %}" />
+        <h1 class="head-brand-text">
+          Reimagining<br/>
+          Active<br/>
+          Democracy
+        </h1>
+      </div>
+      <div class="head-navbar">
+        {% show_menu 0 1 100 100 "menu/rad-menu.html" %}
+      </div>
+      <br class="clear" />
     </div>
-    <!-- /.container -->
-</nav>

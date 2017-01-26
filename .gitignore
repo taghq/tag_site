@@ -1,7 +1,11 @@
-
+/static/
 env/
 migrations/
 __pycache__/
+media/
+*.db
 *.pyc
 pdxrad/settings/local.py 
+pdxrad/settings/staging.py
+pdxrad/settings/production.py
 environment.py
