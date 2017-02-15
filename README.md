@@ -10,7 +10,7 @@ RAD City Website
 
 1. Create a virtual environment with `pyvenv env` (unless you're installing it outside the folder, please name the environment folder "env")
 2. `pip install -r requirements`
-3. Create a new settings file in `pdxrad/settings/`, you can copy the `template.py` file* 
+3. Create a new settings file in `tag_site/settings/`, you can copy the `template.py` file* 
 4. In your project's root, type the following:
 ```
 python manage.py makemigrations

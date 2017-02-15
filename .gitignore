@@ -5,7 +5,7 @@ __pycache__/
 media/
 *.db
 *.pyc
-pdxrad/settings/local.py 
-pdxrad/settings/staging.py
-pdxrad/settings/production.py
+tag_site/settings/local.py 
+tag_site/settings/staging.py
+tag_site/settings/production.py
 environment.py
